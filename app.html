@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comment System</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+	<div id="grid-container">
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+	</div>
+	<div id="centered-rectangle"></div>
+
+	<div id="sort-menu">
+		<a href="#" id="toggle-comments">Комментарии</a>
+		<a href="#" id="toggle-favorites">Избранное</a>
+		<span>Сортировать по:</span>
+		<a href="#" id="sort-link">Дата</a>
+	</div>
+
+	<div id="user-info">
+		<img id="user-avatar" alt="User Avatar" />
+		<span id="user-name"></span>
+		<span id="user-gender"></span>
+	</div>
+
+	<div id="comment-form">
+		<div class="form-group">
+			<textarea id="comment-text" placeholder="Введите текст сообщения..."></textarea>
+			<button id="submit-comment">Отправить</button>
+		</div>
+	</div>
+
+	<div id="comments" class="hidden"></div>
+	<script type="module" src="dist/messeger.js"></script>
+</body>
+
+</html>
